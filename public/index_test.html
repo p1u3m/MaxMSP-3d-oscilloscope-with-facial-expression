@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressions</title>
+    <link href="css/scroll text.css" rel="stylesheet" type="text/css" media="all" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      #video-wrapper {
+        position: relative;
+        width: 500px;
+        height: auto;
+      }
+
+      video,
+      canvas {
+        max-width: 100%;
+      }
+
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .sc{font-family: 'ZCOOL QingKe HuangYou', cursive;}
+    </style>
+  </head>
+  <body>
+
+    <!-- scroll -->
+<div class="scroll-left p">
+  <p class="sc">冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 </p>
+  </div>
+<!-- scroll -->
+
+    <div class="select">
+      <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+    </div>
+  
+    <div class="select">
+      <label for="videoSource">Video source: </label><select id="videoSource"></select>
+    </div>
+
+    <div id="video-wrapper">
+      <video id="video" autoplay muted playsinline></video>
+      <canvas id="overlay"></canvas>
+    </div>
+
+     <!-- scroll -->
+<div class="scroll-left p">
+  <p class="sc">冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 冰淇淋 </p>
+  </div>
+<!-- scroll -->
+
+    <script src="js/face-api.min.js"></script>
+    <script src="js/expressions.js"></script>
+    <script src="js/swcam.js"></script>
+    
+    
+    
+  </body>
+</html>
